@@ -1,0 +1,14 @@
+# Formatting style for glyde (used by clang-format and format-on-save).
+BasedOnStyle: LLVM
+
+# Tabs for indentation (alignment still uses spaces so code lines up at any tab width)
+UseTab: ForIndentation
+IndentWidth: 4
+TabWidth: 4
+
+ColumnLimit: 80
+PointerAlignment: Right          # int *p, not int* p (matches K&R/roadmap style)
+AlignConsecutiveDeclarations: false
+AllowShortFunctionsOnASingleLine: Inline
+BreakBeforeBraces: Attach        # K&R braces, matches the roadmap's code
+SortIncludes: false              # include order is sometimes semantic in C
